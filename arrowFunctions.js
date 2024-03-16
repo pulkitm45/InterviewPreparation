@@ -4,15 +4,17 @@ let obj1 = {
     name : "Pulkit",
     fun : function(){
     console.log(this.name);
-     setTimeout(()=>{console.log(this.name)},2000)
+     setTimeout(function (){console.log(this.name)},2000) //with normal function, this will give window object.
     }
     }
-    /* obj1.fun() */
-    
-    let obj2 = {
+
+
+
+let obj1 = {
     name : "Pulkit",
-    fun : ()=>{
+    fun : function(){
     console.log(this.name);
+     setTimeout(()=>{console.log(this.name)},2000) //with arrow function, this is giving correct value 
     }
     }
-    obj1.fun()
+obj1.fun()
