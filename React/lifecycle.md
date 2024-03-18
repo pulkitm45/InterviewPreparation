@@ -7,6 +7,8 @@ ComponentWillUnmount -- this is used for cleaning up.
 
 LIFECYCLE Function Based -- UseEffect is used.
 
+React Virtual DOM is a lighweight copy of actual DOM. When states or props change, react creates a new virtual dom and then compares this with previous. this is called reconcilation.Instead of directly manipulating the actual DOM elements, React first updates the Virtual DOM and then calculates the most efficient way to update the real DOM based on the differences between the old and new Virtual DOM.
+
 Hooks -- Hooks allows us to use the states,lifecycle methods and context and other features which were available in class based components in functional components
 
 useState -- Used to manage the states in functional components
@@ -27,3 +29,6 @@ Props -- used to pass data from parent component to child component. these are r
 Components -- they are reusable independent UI which has functionality and behaviours
 Elements -- they represent the structure of the ui.
 High Order Components -- these are components that take another component as an input and returns new compoonent with enhanced functionality/ they are used to reuse logic etc.
+
+Redux -- Redux is a state management library. It provides a centralized store to manage application state.
+1) we need to create store using create store 2)Define actions Actions which contain information about what happened 3)Create reducer that take the current state and an action as arguments and return a new state. 4)Dispatch action will trigger state change useDispatch hook can be used.5) useSelector to access the new state.

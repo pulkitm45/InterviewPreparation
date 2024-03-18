@@ -1,4 +1,0 @@
-This Keyword --  the keyword is a special variable that is automatically defined in the scope of every function. Its value depends on how the function is invoked. The keyword is used to refer to the object that is the current context of the function or, more simply the object that the function is a method of.
-if this is used outside the function or method, then it refers to the window object but if it is method of the object then it refers to the object.
-
-Scope --  "scope" refers to the context in which variables and functions are declared and accessed. It defines the visibility and accessibility of these variables and functions within the code. 
