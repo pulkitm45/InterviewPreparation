@@ -41,16 +41,16 @@ let bindFunc = say2.bind(obj2) //this will be set to obj2
 bindFunc("Hello") //This will take hello as argument
 
 //Example: 
-const obj = {
+const obj3 = {
     name: "Nikhil",
     sayHi() {
         console.log(this.name)
     }
 }
 
-const obj2 = {
+const obj4 = {
 	name: 'Pulkit'
 }
 
 
-obj.sayHi.call(obj2, a, b);
+obj3.sayHi.call(obj4, a, b);
