@@ -6,13 +6,8 @@
 // }
 // return res;
 // }
-
-let res=0;
-function sum(a,b){
-    for(let i = 0;i<10;i++){
-       res  = a+=i+b;
-    }
-    return res;
+function sum(x){
+    return x*x;
 }
 
 function myMemo(call){
@@ -24,13 +19,14 @@ return function(...args){
     }
     else{
         console.log("calculating")
-        let res = call(args)
-        cache[args] = res;
-        return res;
+        let result = call(args)
+        cache[args] = result;
+        return result;
     }
 }
 }
 
 const betterFunction = myMemo(sum);
-console.log(betterFunction(10,20))
-console.log(betterFunction(10,20))
+console.log(betterFunction(9))
+console.log(betterFunction(9))
+console.log(betterFunction(9))
