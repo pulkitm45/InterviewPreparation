@@ -4,6 +4,9 @@
 
 //The Call method is used to invoke a function with a specified value and arguments provided individually.
 
+//This helps in function borrowing for example, if we need to access a method of an object from another object.
+//Call and apply are executed there itself but bind can be used to execute a function later
+
 function say(param){
     console.log(param + " " + this.name)
 }
